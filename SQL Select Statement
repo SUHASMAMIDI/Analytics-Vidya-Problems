@@ -1,0 +1,48 @@
+We are going to learn Oracle SQL of "HR" data base
+
+We are going to use here employees table from HR Data base
+Columns name are given below 
+
+EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, PHONE_NUMBER, HIRE_DATE, JOB_ID, SALARY, COMISSION_PCT, MANAGER_ID, DEPARTMENT_ID
+
+# SELECT statment
+#Defination: when we want to retirive or extract data from database tables we use select statements
+
+
+#SQL SELECT statement syntax : select [expression] from table_name;
+
+#Expression Defination : Expression can be a column name, arithmatic expression or a simple string
+#Table_Name Defination: Table name is nothing but a name of table where you can retirive a data
+
+
+Example 1: The following syntax represents selecting or retrieve all columns from the employees table of our data base
+
+select * from employees
+Output: Displays all the columns of employees tables
+# * represents selecting all columns
+
+
+Example 2: Now lets see how to retrieve specified data using select statement, you can specify either single column name or more than one column name seperated by commas(,).
+
+select last_name from employees;
+output: Last_name
+        Abel
+        Austin
+        .
+        .
+        .
+        .
+        
+        
+Example 3: 
+select employee_id, first_name, last_name from employees
+
+Output: employee_id  first_name  last_name
+        198          Anil        Kumar
+
+
+Example 4: we can also perform arithmatic like additin, substraction, multiplication, division
+In this examples we will se simple arithmatic, lets add 1000 to our employees salary
+
+select last_name, salary, salary+1000 from employees; 
+
