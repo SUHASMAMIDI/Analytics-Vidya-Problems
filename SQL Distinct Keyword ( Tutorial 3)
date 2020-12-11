@@ -1,0 +1,26 @@
+How to use SQL DISTICNT keyword
+In neumerous situations we reuired to fetch only uniue rows and uniue data and by the help of SL distinct keyword we can do this
+
+Here i am going to use job_history table of HR sample schema
+
+Example 1:
+select job_id from job_history;
+
+output: Job_ID (Heading)
+        SA_MAN
+        SA_REP
+        SA_REP
+        SA_MAN
+        .
+        .
+Example 2:  Let us use the Distinct keyword to retrive the unique values   
+
+select disticnt job_id from job_history;
+output: Job_ID (Heading)
+        SA_MAN
+        SA_REP
+        .
+        .
+        .
+        .
+        .
