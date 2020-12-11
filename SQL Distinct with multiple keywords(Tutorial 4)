@@ -1,0 +1,27 @@
+How to use SQL distinct keyword with multiple columns
+
+Distinct keyword is used to get the uniue values from the column
+
+Firstly i have created a table 
+
+create table
+      example  
+            first_name   varchar(30),
+            mid_name     varcahr(30),
+            last_name    varchar(30),
+            ex_id        number(3)
+      );
+      
+      
+Example 1: 
+select DISTINCT first_name, mid_name, last_name from employees;
+
+Output: FIRST_NAME  MID_NAME  last_name
+        steven      paul      jobs
+        steven      wilson    grant
+        steven      david     house
+        
+        
+        
+        
+  
