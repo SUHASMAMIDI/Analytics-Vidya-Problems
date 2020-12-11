@@ -1,0 +1,37 @@
+How to use concatenation operator for combining the output of two or more columns and how to use literal character string
+
+Concatenation operator is the bianry operator provided by oracle acts on two operands
+
+Example 1: Now we are going to combine the values of first_name and last_name from employees table
+
+select first_name|| ' ' ||last_name from employees;
+
+output: FIRST_NAME||''||LAST_NAME
+
+
+Example 2: Lets see how to use literal string, say you want to print
+
+" The Employee id of Mr. Douglas Grant is 199 "  - Lets see how to do this
+
+select 'The employee id of Mr. '||first_name||' '||last_name||'is'||employee_id from employees;
+
+output: 
+'The employee id of Mr. '||first_name||' '||last_name||'is'||employee_id (Heading)
+
+1. The employee id of Mr. Douglas Grant is 199 
+2.        .
+3.        .
+4.        .
+
+Example 3: The heading of this column is what we want
+Lets see how fix this heading
+
+select 'The employee id of Mr. '||first_name||' '||last_name||'is'||employee_id as "Detail" from employees;
+
+Output:
+
+Detail (Heading)
+1. The employee id of Mr. Douglas Grant is 199
+2.        .
+3.        .
+4.        .
